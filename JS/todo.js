@@ -22,15 +22,34 @@ function onSubmitTodo(event) {
 
 function paintTodo(newTodo) {
   const li = document.createElement("li");
+  // const text_box = document.createElement("div");
+  const btn_checkBox = document.createElement("input");
   const span = document.createElement("span");
-  const btn = document.createElement("button");
+  const btn_delete = document.createElement("button");
+
+  btn_checkBox.type = "checkbox";
+
+  li.classList.add("todo__li");
+  btn_checkBox.classList.add("todo__checkBox");
+  span.classList.add("todo__text");
+  btn_delete.classList.add("todo__delete");
+
+  btn_checkBox.addEventListener("click", onClickCheckBox);
   span.innerText = newTodo.text;
-  btn.innerText = "X";
-  btn.addEventListener("click", onClickRemoveListItem);
+  btn_delete.innerText = "❌";
+  btn_delete.addEventListener("click", onClickRemoveListItem);
   li.id = newTodo.id;
+  // text_box.appendChild(span);
+  // li.appendChild(text_box);
+  li.appendChild(btn_checkBox);
   li.appendChild(span);
-  li.appendChild(btn);
+  li.appendChild(btn_delete);
   todo_list.appendChild(li);
+}
+
+function onClickCheckBox(event) {
+  const li = event.target.parentElement;
+  li.classList.toggle("todo__li-line");
 }
 
 function onClickRemoveListItem(event) {

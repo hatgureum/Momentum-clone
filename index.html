@@ -2,13 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header>
+      <div class="header__column"></div>
+      <div class="header__column">
+        <div><span id="weather"></span></div>
+        <div>
+          <span id="city"></span>
+        </div>
+      </div>
+    </header>
     <div>
+      <h3 class="clock"></h3>
+
       <form id="login-form">
         <input
           maxlength="15"
@@ -18,20 +28,18 @@
         />
         <input type="submit" value="Log In" />
       </form>
+    </div>
+    <div>
+      <h2 class="hidden greeting"></h2>
+    </div>
+
+    <div id="todo-box">
       <form id="todo-form">
-        <input type="text" placeholder="New Todo" />
+        <input class="todo__newTodo" type="text" placeholder="New Todo" />
       </form>
       <ul id="todo-list"></ul>
     </div>
-    <div>
-      <span id="weather"></span>
-      <span id="city"></span>
-    </div>
-    <h1 class="clock">h</h1>
-    <br />
-    <div>
-      <h2 class="hidden" id="greeting"></h2>
-    </div>
+
     <div>
       <span id="quote"></span>
       <span id="author"></span>

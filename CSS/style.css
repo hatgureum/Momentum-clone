@@ -1,21 +1,29 @@
+@import "reset.css";
+@import "variables.css";
+@import "header.css";
+@import "todo.css";
+
 .clock {
   text-align: center;
-  margin-top: 400px;
   font-size: 50px;
+  transition: all 0.5s ease-in-out;
 }
 
 .greeting {
   text-align: center;
-  margin-top: 420px;
-  size: 10px;
+  font-size: 30px;
+}
+
+.clock :focus {
+  background-color: wheat;
 }
 
 .hidden {
   visibility: hidden;
-  /* display: none; */
 }
 
 body {
+  box-sizing: border-box;
   height: 100vh;
 }
 

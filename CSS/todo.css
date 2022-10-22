@@ -1,0 +1,51 @@
+#todo-box {
+  border-radius: 10px;
+  padding: 10px 0px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.todo__newTodo {
+  margin: 10px;
+  width: 350px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+
+.todo__newTodo::placeholder {
+  color: var(--color-gray);
+}
+
+.todo__li {
+  position: relative;
+  width: 360px;
+  margin: 5px 10px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.todo__li-line {
+  text-decoration: line-through;
+  color: var(--color-gray);
+}
+
+.todo__checkBox {
+  display: block;
+  position: absolute;
+  left: -25px;
+}
+
+.todo__delete {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+/* .todo__delete :hover {
+  background-color: red;
+} */
