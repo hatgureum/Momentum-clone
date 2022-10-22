@@ -26,11 +26,21 @@
 }
 
 body {
-  box-sizing: border-box;
   height: 100vh;
 }
 
 * {
+  box-sizing: border-box;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
     "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 }

@@ -9,7 +9,7 @@
 
 .quote__quotebox {
   z-index: 1;
-  height: 16px;
+  height: 40px;
 }
 
 .quote__quotebox :hover {
