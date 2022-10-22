@@ -4,6 +4,9 @@
   width: 400px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
+  position: fixed;
+  left: 78.5%;
+  top: 40%;
 }
 
 .todo__newTodo {

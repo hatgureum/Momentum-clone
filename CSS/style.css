@@ -8,17 +8,24 @@
 
 .clock {
   text-align: center;
-  font-size: 50px;
-  transition: all 0.5s ease-in-out;
+  font-size: 10rem;
+}
+
+.clockbox {
+  position: fixed;
+  top: 35%;
+  left: 33%;
 }
 
 .greeting {
   text-align: center;
-  font-size: 30px;
+  font-size: 5rem;
 }
 
-.clock :focus {
-  background-color: wheat;
+.greetingbox {
+  position: fixed;
+  top: 50%;
+  left: 33%;
 }
 
 .hidden {
@@ -26,6 +33,7 @@
 }
 
 body {
+  position: relative;
   height: 100vh;
 }
 
