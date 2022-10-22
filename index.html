@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="header__column"></div>
+      <div class="header__column">Links</div>
       <div class="header__column">
         <div><span id="weather"></span></div>
         <div>
@@ -16,39 +16,40 @@
         </div>
       </div>
     </header>
-    <div>
-      <form id="login-form">
-        <input
-          maxlength="15"
-          placeholder="Write your name"
-          required
-          type="text"
-        />
-        <input type="submit" value="Log In" />
-      </form>
-    </div>
-    <div class="clockbox">
-      <h3 class="clock"></h3>
-    </div>
-    <div class="greetingbox">
-      <h2 class="hidden greeting"></h2>
-    </div>
-
-    <div id="todo-box">
-      <form id="todo-form">
-        <input class="todo__newTodo" type="text" placeholder="New Todo" />
-      </form>
-      <ul id="todo-list"></ul>
-    </div>
-
-    <div class="quote">
-      <div class="quote__quotebox">
-        <span class="quote__quote"></span>
+    <main>
+      <div>
+        <form id="login-form">
+          <input
+            maxlength="15"
+            placeholder="Write your name"
+            required
+            type="text"
+          />
+          <input type="submit" value="Log In" />
+        </form>
       </div>
-      <div class="quote__authorbox">
-        <span class="quote__author"></span>
+      <div class="clockbox">
+        <h3 class="clock"></h3>
+        <h2 class="hidden greeting"></h2>
       </div>
-    </div>
+
+      <div id="todo-box">
+        <form id="todo-form">
+          <input class="todo__newTodo" type="text" placeholder="New Todo" />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+    <footer>
+      <div class="quote">
+        <div class="quote__quotebox">
+          <span class="quote__quote"></span>
+        </div>
+        <div class="quote__authorbox">
+          <span class="quote__author"></span>
+        </div>
+      </div>
+    </footer>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
     <script src="js/quote.js"></script>

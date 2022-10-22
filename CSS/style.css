@@ -12,20 +12,11 @@
 }
 
 .clockbox {
-  position: fixed;
-  top: 35%;
-  left: 33%;
 }
 
 .greeting {
   text-align: center;
   font-size: 5rem;
-}
-
-.greetingbox {
-  position: fixed;
-  top: 50%;
-  left: 33%;
 }
 
 .hidden {
@@ -35,6 +26,10 @@
 body {
   position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 * {
