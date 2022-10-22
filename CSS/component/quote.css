@@ -1,0 +1,36 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  position: relative;
+  /* transition: all 1s ease-in-out, transform 2s ease-in-out; */
+}
+
+.quote__quotebox {
+  z-index: 1;
+  height: 16px;
+}
+
+.quote__quotebox :hover {
+  transform: translateY(-20px);
+}
+
+.quote__quote {
+  display: block;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+
+.quote__authorbox {
+  z-index: 0;
+  position: absolute;
+  top: -5px;
+  height: 30px;
+}
+
+.quote__author {
+  display: block;
+  opacity: 0.8;
+  transition: all 0.1s ease-in;
+}

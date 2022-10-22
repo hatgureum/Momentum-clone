@@ -1,7 +1,10 @@
 @import "reset.css";
 @import "variables.css";
-@import "header.css";
-@import "todo.css";
+
+/* Component */
+@import "component/header.css";
+@import "component/todo.css";
+@import "component/quote.css";
 
 .clock {
   text-align: center;
