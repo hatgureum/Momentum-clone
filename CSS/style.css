@@ -2,22 +2,10 @@
 @import "variables.css";
 
 /* Component */
+@import "component/main.css";
 @import "component/header.css";
 @import "component/todo.css";
 @import "component/quote.css";
-
-.clock {
-  text-align: center;
-  font-size: 10rem;
-}
-
-.clockbox {
-}
-
-.greeting {
-  text-align: center;
-  font-size: 5rem;
-}
 
 .hidden {
   visibility: hidden;
@@ -37,13 +25,4 @@ body {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
     "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-
-img {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
 }

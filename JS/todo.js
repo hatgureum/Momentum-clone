@@ -1,3 +1,4 @@
+const LOCALSTORAGE_KEY_TODO = "todos";
 const todo_form = document.querySelector("#todo-form");
 const todo_input = document.querySelector("#todo-form input");
 const todo_list = document.querySelector("#todo-list");
@@ -76,12 +77,12 @@ function onClickRemoveListItem(event) {
 }
 
 function saveTodo() {
-  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem(LOCALSTORAGE_KEY_TODO, JSON.stringify(todos));
 }
 
 todo_form.addEventListener("submit", onSubmitTodo);
 
-const parsedTodos = JSON.parse(localStorage.getItem("todos"));
+const parsedTodos = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY_TODO));
 if (parsedTodos) {
   parsedTodos.forEach((item) => {
     paintTodo(item);
