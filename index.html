@@ -18,22 +18,23 @@
       </div>
     </header>
     <main>
-      <div>
-        <form id="login-form">
-          <input
-            maxlength="15"
-            placeholder="Write your name"
-            required
-            type="text"
-          />
-          <input type="submit" value="Log In" />
-        </form>
-      </div>
       <div class="clockbox">
         <h3 class="clock"></h3>
         <h2 class="hidden greeting"></h2>
       </div>
 
+      <div class="login">
+        <form class="login-form">
+          <input
+            maxlength="15"
+            placeholder="Write your name"
+            required
+            type="text"
+            class="login-form__text"
+          />
+          <input class="hidden" type="submit" value="Log In" />
+        </form>
+      </div>
       <div id="todo-box">
         <form id="todo-form">
           <input class="todo__newTodo" type="text" placeholder="New Todo" />

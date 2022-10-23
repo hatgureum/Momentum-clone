@@ -5,7 +5,25 @@
 
 .greeting {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+.login {
+  text-align: center;
+}
+
+.login-form__text {
+  background: transparent;
+  border: none;
+  font-size: 4rem;
+  color: white;
+  border-bottom: 2px white solid;
+  text-align: center;
+  width: 40rem;
+}
+
+.login-form__text::placeholder {
+  color: white;
 }
 
 .background-img {
